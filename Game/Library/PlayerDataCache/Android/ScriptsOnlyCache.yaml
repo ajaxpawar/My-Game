@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - GameManager
+    - LifePowerUp
     - Slider
     - normalBrick
     Unity.2D.Animation.Editor.dll:
@@ -35,7 +36,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Modal/Scenes/Main.unity:
+    Assets/View/Scenes/Main.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -88,6 +89,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3354}
     - Class: 114
       Script: {instanceID: 4784}
+    - Class: 114
+      Script: {instanceID: 5566}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,7 +220,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 03b42ebfb98659c710235d4725386604
+      Hash: 07a51763d17bf16e5c4c48617aca09eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
@@ -643,11 +646,17 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LifePowerUp
+  - hash:
+      serializedVersion: 2
       Hash: 762a30c8d779b11af16ed9ce1f2d32fa
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
   platform: 13
   scenePathNames:
-  - Assets/Modal/Scenes/Main.unity
-  playerPath: C:/Unity Game/My-Game/Game/Prototype3(5 Dec).apk
+  - Assets/View/Scenes/Main.unity
+  playerPath: C:/Unity Game/Game/Prototype5(11 Dec).apk

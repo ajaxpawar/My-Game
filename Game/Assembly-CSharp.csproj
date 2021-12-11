@@ -53,10 +53,11 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Controller\Script\GameManager.cs" />
     <Compile Include="Assets\Controller\Script\Slider.cs" />
     <Compile Include="Assets\Controller\Script\Ball.cs" />
-    <Compile Include="Assets\Controller\Script\GameManager.cs" />
     <Compile Include="Assets\Controller\Script\normalBrick.cs" />
+    <Compile Include="Assets\Controller\Script\LifePowerUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

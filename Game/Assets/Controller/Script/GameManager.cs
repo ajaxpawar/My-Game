@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
         livesText.text = "Lives: " + lives;
         scoreText.text = "Score: " + score;
         nuberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
-        Debug.Log(nuberOfBricks);
     }
 
     // Update is called once per frame
@@ -56,4 +55,12 @@ public class GameManager : MonoBehaviour
         Application.Quit();
         Debug.Log("Game Over");
     }
+    public void UpdateNumberOfBricks()
+    {
+        nuberOfBricks--;
+        if (nuberOfBricks <= 0)
+        {
+            GameOver();
+        }
+    } 
 }

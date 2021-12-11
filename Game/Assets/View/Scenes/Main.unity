@@ -1034,6 +1034,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367067809}
   m_CullTransparentMesh: 1
+--- !u!1 &422236583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422236584}
+  m_Layer: 0
+  m_Name: PowerUps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422236584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422236583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &461566919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1751,6 +1781,7 @@ MonoBehaviour:
   inPlay: 0
   slider: {fileID: 1457762893}
   gameManagerScript: {fileID: 1323523729}
+  LifePowerUp: {fileID: 4049853862482656617, guid: aa92151c813e90b4188bba2d2b4dc196, type: 3}
 --- !u!82 &716085777
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3177,6 +3208,7 @@ GameObject:
   - component: {fileID: 1457762894}
   - component: {fileID: 1457762897}
   - component: {fileID: 1457762898}
+  - component: {fileID: 1457762896}
   m_Layer: 0
   m_Name: Slider
   m_TagString: Untagged
@@ -3255,6 +3287,27 @@ RectTransform:
   m_AnchoredPosition: {x: 1.75, y: -3.753}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!50 &1457762896
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457762893}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!114 &1457762897
 MonoBehaviour:
   m_ObjectHideFlags: 0

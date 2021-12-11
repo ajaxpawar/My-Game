@@ -10,6 +10,7 @@ public class Ball : MonoBehaviour
     private AudioSource brakingbrick;
     public GameObject slider;
     public GameManager gameManagerScript;
+    public Transform LifePowerUp;
    
     void Start()
     {
@@ -25,7 +26,7 @@ public class Ball : MonoBehaviour
         if (!inPlay)
         {
             transform.position = ballStartPosition.position;
-            if (gameManagerScript.gameOver)
+            if (gameManagerScript.gameOver)//game over
             {
                 return;
             }
@@ -42,19 +43,26 @@ public class Ball : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             inPlay = false;
-            gameManagerScript.UpdateLives(-1);
+            gameManagerScript.UpdateLives(-1);//remove lives
         }
     }
      void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject!=slider)
         {
-            brakingbrick.Play();
+            brakingbrick.Play();//sound
         }
         if (other.transform.CompareTag("Brick"))
         {
-            gameManagerScript.UpdateScore(other.gameObject.GetComponent<normalBrick>().points);
+            int randomChance = Random.Range(1, 101);
+            if (randomChance > 75)//LifePowerUp Spon
+            {
+                Instantiate(LifePowerUp,other.transform.position,other.transform.rotation);
+            }
+            gameManagerScript.UpdateScore(other.gameObject.GetComponent<normalBrick>().points);//add point score
             Destroy(other.gameObject);
+            gameManagerScript.UpdateNumberOfBricks();//remove bricks
+
         }
     }
 
