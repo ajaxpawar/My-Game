@@ -55,7 +55,7 @@ public class Ball : MonoBehaviour
         if (other.transform.CompareTag("Brick"))
         {
             int randomChance = Random.Range(1, 101);
-            if (randomChance > 75)//LifePowerUp Spon
+            if (randomChance >90)//LifePowerUp Spon
             {
                 Instantiate(LifePowerUp,other.transform.position,other.transform.rotation);
             }
