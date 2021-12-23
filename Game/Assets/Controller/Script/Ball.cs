@@ -22,14 +22,17 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (!inPlay)
+
+        if (gameManagerScript.gameOver)//game over
         {
             transform.position = ballStartPosition.position;
-            if (gameManagerScript.gameOver)//game over
-            {
-                return;
-            }
+            return;
+        }
+        if (!inPlay)
+        {
+           
+            transform.position = ballStartPosition.position;
+
         }
         if (Input.GetMouseButtonDown(0) && !inPlay )//jump=spase button
         {
@@ -54,11 +57,11 @@ public class Ball : MonoBehaviour
         }
         if (other.transform.CompareTag("Brick"))
         {
-            int randomChance = Random.Range(1, 101);
+            /*  int randomChance = Random.Range(1, 101);
             if (randomChance >90)//LifePowerUp Spon
-            {
-                Instantiate(LifePowerUp,other.transform.position,other.transform.rotation);
-            }
+             {
+                 Instantiate(LifePowerUp,other.transform.position,other.transform.rotation);
+             }*/
             gameManagerScript.UpdateScore(other.gameObject.GetComponent<normalBrick>().points);//add point score
             Destroy(other.gameObject);
             gameManagerScript.UpdateNumberOfBricks();//remove bricks
