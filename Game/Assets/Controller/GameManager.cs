@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         curruntLevelIndex++;
         Instantiate(levels[curruntLevelIndex], Vector2.zero, Quaternion.identity);
         nuberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
+        UpdateLives(1);
         gameOver = false;
     }
     public void UpdateNumberOfBricks()

@@ -40,9 +40,10 @@ public class Slider : MonoBehaviour
     }
     void movement()
     {
-        xSlide = mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, 0)).x;
-        this.transform.position = new Vector3(xSlide, ySlide, 0);
+        //   xSlide = mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, 0)).x;
         
+        xSlide = mainCam.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, 0)).x;
+        this.transform.position = new Vector2(xSlide, ySlide);
     }
      void OnTriggerEnter2D(Collider2D other)
     {

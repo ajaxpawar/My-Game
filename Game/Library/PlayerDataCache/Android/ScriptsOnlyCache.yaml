@@ -136,7 +136,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: be0766908faac2b4efeb2e087fec2f9d
+      Hash: 6f7dbc5a9921571eb5bbf96fffbce18e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -659,4 +659,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/View/Scenes/Main.unity
-  playerPath: C:/Unity Game/Game/Prototype5(11 Dec).apk
+  playerPath: C:/Unity Game/Game/Prototype7(25 Dec).apk
