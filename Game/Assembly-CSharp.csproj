@@ -58,6 +58,7 @@
     <Compile Include="Assets\Controller\Script\Ball.cs" />
     <Compile Include="Assets\Controller\Script\normalBrick.cs" />
     <Compile Include="Assets\Controller\Script\LifePowerUp.cs" />
+    <Compile Include="Assets\Controller\Script\StartMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

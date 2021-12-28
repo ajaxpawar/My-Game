@@ -37,7 +37,7 @@ public class Ball : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !inPlay )//jump=spase button
         {
             inPlay = true;
-            rb.AddForce(Vector2.up *250);
+            rb.AddForce(Vector2.up*250);
         }
     }
      void OnTriggerEnter2D(Collider2D other)

@@ -55,8 +55,8 @@ public class GameManager : MonoBehaviour
     }
     public void Quit()
     {
-        Application.Quit();
-        Debug.Log("Game Over");
+
+        SceneManager.LoadScene("Menu");
     }
     public void NextLevel()
     {
