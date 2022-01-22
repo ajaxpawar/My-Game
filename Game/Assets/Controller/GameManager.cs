@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanal;
     public GameObject NextLevelPanal;
     public Transform[] levels;
+    private AudioSource backgroundAudio;
+    //private AudioSource gameOverAudio ;
     private int curruntLevelIndex=0;
     int nuberOfBricks;
     // Start is called before the first frame update
@@ -21,6 +23,10 @@ public class GameManager : MonoBehaviour
         livesText.text = "Lives: " + lives;
         scoreText.text = "Score: " + score;
         nuberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
+        backgroundAudio = GetComponent<AudioSource>();
+       // gameOverAudio = GetComponent<AudioSource>();
+        backgroundAudio.Play();//sound
+
     }
 
     // Update is called once per frame
@@ -46,6 +52,8 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
+        backgroundAudio.Stop();
+      //  gameOverAudio.Play();
         gameOver = true;
         GameOverPanal.SetActive(true);
     }
