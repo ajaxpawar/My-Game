@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanal;
     public GameObject NextLevelPanal;
     public Transform[] levels;
+    public Text highScoreText;
+   // public Text menuHighScoreText;
     private AudioSource backgroundAudio;
     //private AudioSource gameOverAudio ;
     private int curruntLevelIndex=0;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         livesText.text = "Lives: " + lives;
         scoreText.text = "Score: " + score;
         nuberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
+     //   menuHighScoreText = highScoreText;
         backgroundAudio = GetComponent<AudioSource>();
        // gameOverAudio = GetComponent<AudioSource>();
         backgroundAudio.Play();//sound
@@ -56,6 +59,17 @@ public class GameManager : MonoBehaviour
       //  gameOverAudio.Play();
         gameOver = true;
         GameOverPanal.SetActive(true);
+        int highScore = PlayerPrefs.GetInt("HIGHSCORE");
+        if (score > highScore)
+        {
+            PlayerPrefs.SetInt("HIGHSCORE", score);
+            highScoreText.text = "NEW HIGH SCORE: " + score;
+        }
+        else
+        {
+            highScoreText.text = "HIGH SCORE: " + highScore+"\n\n"+"Can You Set New Record";
+
+        }
     }
     public void TryAgain()
     {

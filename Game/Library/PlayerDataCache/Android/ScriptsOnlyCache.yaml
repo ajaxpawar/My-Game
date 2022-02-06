@@ -11,10 +11,13 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -148,6 +151,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -183,7 +188,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 6f7dbc5a9921571eb5bbf96fffbce18e
+      Hash: 05147f6ec3d3737faaa0b74e9906784a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -713,4 +718,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/View/Scenes/Menu.unity
   - Assets/View/Scenes/Main.unity
-  playerPath: C:/Unity Game/Game/Prototype9 (10 jan).apk
+  playerPath: C:/Unity Game/Game/Prototype10(5 feb).apk
