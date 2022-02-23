@@ -47,9 +47,9 @@ public class Slider : MonoBehaviour
     }
      void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("LifePowerUp"))
+        if (other.CompareTag("ScoreUp"))
         {
-            gameManagerScript.UpdateLives(1);
+            gameManagerScript.UpdateScore(1);
             Destroy(other.gameObject);
         }
         

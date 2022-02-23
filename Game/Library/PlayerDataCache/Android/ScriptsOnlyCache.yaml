@@ -3,7 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - GameManager
-    - LifePowerUp
+    - MusicManager
+    - ScoreUpScript
     - Slider
     - StartMenu
     - normalBrick
@@ -87,11 +88,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4786}
     - Class: 114
-      Script: {instanceID: 5568}
+      Script: {instanceID: 5570}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -125,6 +126,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -140,9 +145,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 5252}
+      Script: {instanceID: 3356}
+    - Class: 114
+      Script: {instanceID: 5254}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -408,6 +415,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 8f57419a49db824d795805a009adea3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MusicManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -707,7 +720,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: LifePowerUp
+    className: ScoreUpScript
   - hash:
       serializedVersion: 2
       Hash: 762a30c8d779b11af16ed9ce1f2d32fa
@@ -718,4 +731,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/View/Scenes/Menu.unity
   - Assets/View/Scenes/Main.unity
-  playerPath: C:/Unity Game/Game/Prototype10(5 feb).apk
+  playerPath: C:/Unity Game/My-Game/Game/Prototype11(12 feb).apk

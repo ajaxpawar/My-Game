@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Bottom
   - Brick
-  - LifePowerUp
+  - ScoreUp
   layers:
   - Default
   - TransparentFX

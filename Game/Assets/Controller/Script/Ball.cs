@@ -38,7 +38,7 @@ public class Ball : MonoBehaviour
         {
             inPlay = true;
            // rb.AddForce(Vector2.up*250);
-            rb.AddForce(new Vector2(0, 250));
+            rb.AddForce(new Vector2(0f,250f));
 
         }
     }
@@ -59,11 +59,11 @@ public class Ball : MonoBehaviour
         }
         if (other.transform.CompareTag("Brick"))
         {
-            /*  int randomChance = Random.Range(1, 101);
+              int randomChance = Random.Range(1, 101);
             if (randomChance >90)//LifePowerUp Spon
              {
                  Instantiate(LifePowerUp,other.transform.position,other.transform.rotation);
-             }*/
+             }
             gameManagerScript.UpdateScore(other.gameObject.GetComponent<normalBrick>().points);//add point score
             Destroy(other.gameObject);
             gameManagerScript.UpdateNumberOfBricks();//remove bricks
