@@ -742,7 +742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &798798421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -832,15 +832,15 @@ RectTransform:
   m_GameObject: {fileID: 840785279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 619631032}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 295, y: -337}
-  m_SizeDelta: {x: 162.5505, y: 156.592}
+  m_AnchoredPosition: {x: 283.41583, y: -336}
+  m_SizeDelta: {x: 148.2931, y: 200.8224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840785281
 MonoBehaviour:
@@ -1251,7 +1251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sound 3
+  m_Text: Select Music
 --- !u!222 &1506072611
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1269,8 +1269,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1527631763}
-  - component: {fileID: 1527631762}
   - component: {fileID: 1527631761}
+  - component: {fileID: 1527631762}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sound1: {fileID: 8300000, guid: 9da5a9d6f213fe04ebd8d3b7e84d1f2a, type: 3}
   Sound2: {fileID: 8300000, guid: 19fd7c56ca33bca44b0615937c499fcf, type: 3}
-  audioSource: {fileID: 1527631761}
+  source: {fileID: 0}
 --- !u!4 &1527631763
 Transform:
   m_ObjectHideFlags: 0
