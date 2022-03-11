@@ -1,54 +1,47 @@
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MusicManager : MonoBehaviour
+public class MusicManager :MonoBehaviour
 
 {
-    private static MusicManager musicManager;
-
     public AudioClip Sound1;
     public AudioClip Sound2;
-    //public AudioClip Sound3;
-
-    public AudioSource audioSource;
-    string[] musicPath ;
+    //public AudioSource audioSource;
+    public AudioSource source;
 
     public void Awake()
     {
-        audioSource.Play();
+        source = GetComponent<AudioSource>();
+        source.Stop();
     }
     public void PlaySound1()
     {
-        audioSource.clip = Sound1;
-        audioSource.Play();
-        DontDestroyOnLoad(audioSource);
+        source.clip = Sound1;
+        source.Play();
+        source.loop = true;
+        DontDestroyOnLoad(source);
     }
     public void PlaySound2()
     {
-        audioSource.clip = Sound2;
-        audioSource.Play();
-        DontDestroyOnLoad(audioSource);
+        source.clip = Sound2;
+        source.Play();
+        source.loop = true;
+        DontDestroyOnLoad(source);
     }
     public void PlaySound3()
     {
-        //audioSource.clip = Sound3;
-        //audioSource.Play();
-        //DontDestroyOnLoad(audioSource);
-        string path = EditorUtility.OpenFilePanel("Overwrite with mp3","","mp3");
-        musicPath = path.Split('/');
-        string music = musicPath[musicPath.Length - 1];
-        if (path.Length != 0)
-        {
-            Debug.Log(path);
-            Debug.Log(music);
 
-            //audioSource.clip = Resources.Load<AudioClip>(path);
-           // audioSource = Get;
-            DontDestroyOnLoad(audioSource);
-        }
+        string path = UnityEditor.EditorUtility.OpenFilePanel("Overwrite with mp3", "", "mp3");
+        AudioType audioType = AudioType.MPEG;
+        string url = string.Format("file://{0}", path);
+        WWW www = new WWW(url);
+        source.clip = www.GetAudioClip(true, true,audioType);
+        source.Play();
+        source.loop = true;
+        DontDestroyOnLoad(source);
     }
     public void NoSound()
     {
-        audioSource.Stop();
+        source.Stop();
     }
 }

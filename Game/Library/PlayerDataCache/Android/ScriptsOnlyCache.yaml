@@ -3,7 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - GameManager
-    - MusicManager
     - ScoreUpScript
     - Slider
     - StartMenu
@@ -12,7 +11,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -417,12 +415,6 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 8f57419a49db824d795805a009adea3a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MusicManager
-  - hash:
-      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -731,4 +723,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/View/Scenes/Menu.unity
   - Assets/View/Scenes/Main.unity
-  playerPath: C:/Unity Game/My-Game/Game/Prototype11(12 feb).apk
+  playerPath: C:/Unity Game/Game/25 feb.apk
