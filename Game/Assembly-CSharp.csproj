@@ -56,11 +56,14 @@
     <Compile Include="Assets\Controller\GameManager.cs" />
     <Compile Include="Assets\Controller\Script\Slider.cs" />
     <Compile Include="Assets\Controller\Script\Ball.cs" />
+    <Compile Include="Assets\Controller\Script\OpenFile.cs" />
     <Compile Include="Assets\Controller\Script\MusicManager.cs" />
     <Compile Include="Assets\Controller\Script\normalBrick.cs" />
     <Compile Include="Assets\Controller\Script\StartMenu.cs" />
     <Compile Include="Assets\Controller\Script\ScoreUpScript.cs" />
-    <Compile Include="Assets\Controller\Script\OpenFile.cs" />
+    <Compile Include="Assets\Toast UI\Scripts\Toast.cs" />
+    <Compile Include="Assets\Toast UI\Scripts\ToastUI.cs" />
+    <Compile Include="Assets\Demo Scene\Demo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

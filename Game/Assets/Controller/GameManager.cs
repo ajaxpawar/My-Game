@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Transform[] levels;
     public Text highScoreText;
     private int curruntLevelIndex=0;
+    GameObject mm;
     int nuberOfBricks;
     void Start()
     {
@@ -20,7 +21,8 @@ public class GameManager : MonoBehaviour
         score = 0;
         livesText.text = "Lives: " + lives;
         scoreText.text = "Score: " + score;
-        nuberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;        
+        nuberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
+        mm = GameObject.FindGameObjectWithTag("mtag");
      //   menuHighScoreText = highScoreText;
        // backgroundAudio = GetComponent<AudioSource>();
        // gameOverAudio = GetComponent<AudioSource>();
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
     }
     public void Quit()
     {
+        Destroy(mm);
         SceneManager.LoadScene("Menu");
     }
     public void NextLevel()

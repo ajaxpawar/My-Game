@@ -13,4 +13,11 @@ public class StartMenu : MonoBehaviour
         Debug.Log("Game Quit");
         Application.Quit();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }
